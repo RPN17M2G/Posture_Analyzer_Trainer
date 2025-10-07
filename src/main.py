@@ -1,6 +1,6 @@
 from config import Config
 from core.extractor import PoseExtractor
-from core.csv_writer import CSVWriter
+from core.pose_data_csv_writer import PoseDataCSVWriter
 from trainer.posture_trainer import PostureTrainer
 from core.angle_defs import angle_definitions
 import mediapipe as mp
@@ -10,7 +10,7 @@ def main():
 
     # Extract reference data
     extractor = PoseExtractor(confidence=config.MIN_DETECTION_CONFIDENCE)
-    writer = CSVWriter(config.REF_CSV_PATH, list(angle_definitions.keys()), [lm.name for lm in mp.solutions.pose.PoseLandmark])
+    writer = PoseDataCSVWriter(config.REF_CSV_PATH, list(angle_definitions.keys()), [lm.name for lm in mp.solutions.pose.PoseLandmark])
     extractor.attach(writer)
     extractor.process_video(config.REF_VIDEO_PATH)
     writer.save()

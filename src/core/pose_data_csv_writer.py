@@ -2,7 +2,7 @@ import csv
 from .observers import Observer
 from typing import List, Dict, Any
 
-class CSVWriter(Observer):
+class PoseDataCSVWriter(Observer):
     """Writes pose data to CSV whenever an update is received."""
 
     def __init__(self, filepath: str, angle_names: List[str], landmark_names: List[str]):
