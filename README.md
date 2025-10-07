@@ -39,9 +39,7 @@ People have different body proportions(For example: arm length, leg length, or o
 
 Mathematically, for a joint B connected to points A and C:
 
-$
-\theta = \arccos \left( \frac{\vec{BA} \cdot \vec{BC}}{|\vec{BA}| , |\vec{BC}|} \right)
-$
+$\theta = \arccos \left( \frac{\vec{BA} \cdot \vec{BC}}{|\vec{BA}| , |\vec{BC}|} \right)$
 
 Where:
 
