@@ -2,7 +2,7 @@ from config import Config
 from core.extractor import PoseExtractor
 from core.pose_data_csv_writer import PoseDataCSVWriter
 from trainer.posture_trainer import PostureTrainer
-from core.angle_defs import angle_definitions
+from core.angle_definitions import angle_definitions
 import mediapipe as mp
 
 def main():
