@@ -1,6 +1,6 @@
 import math
 
-from .angle_defs import angle_definitions
+from .angle_definitions import angle_definitions
 
 def get_landmark_coordinates(landmarks, landmark_id):
     """Extracts (x, y) coordinates for a given landmark ID."""

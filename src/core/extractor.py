@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 from .angle_utils import extract_angles_from_landmarks
-from .angle_defs import angle_definitions
+from .angle_definitions import angle_definitions
 
 class PoseExtractor:
     """Extracts pose data from video and notifies observers."""

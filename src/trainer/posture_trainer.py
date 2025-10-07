@@ -4,7 +4,7 @@ import csv
 from typing import List, Dict, Any, Tuple, Callable
 
 from core.visualizer import PoseVisualizer
-from core.angle_defs import angle_definitions
+from core.angle_definitions import angle_definitions
 from core.angle_utils import extract_angles_from_landmarks
 import mediapipe as mp
 from config import Config
